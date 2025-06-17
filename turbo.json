@@ -1,7 +1,13 @@
 {
   "$schema": "https://turborepo.com/schema.json",
+  "globalEnv": ["SUPABASE_URL", "SUPABASE_ANON_KEY", "SUPABASE_BUCKET_NAME"],
   "tasks": {
+    "format:write": {},
     "format:check": {},
-    "format:write": {}
+    "build": {
+      "dependsOn": ["format:check", "^build"],
+      "outputs": ["build/**"]
+    },
+    "dev": { "cache": false, "persistent": true }
   }
 }
