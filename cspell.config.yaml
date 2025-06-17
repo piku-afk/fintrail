@@ -1,9 +1,11 @@
 version: '0.2'
-ignorePaths: []
+ignorePaths:
+  - .env.*
 dictionaryDefinitions: []
 dictionaries: []
 words: []
 ignoreWords:
+  - dotenvx
   - biomejs
   - fintrail
   - pkgroll

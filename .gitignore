@@ -8,7 +8,7 @@ build
 npm-debug.log*
 
 # environment variable files
-.env
+.env.*
 
 # miscellaneous
 .DS_Store
