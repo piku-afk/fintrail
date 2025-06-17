@@ -6,7 +6,8 @@
     "dev": "tsx src/index.ts"
   },
   "dependencies": {
-    "@fintrail/supabase-client": "workspace:*"
+    "@fintrail/supabase-client": "workspace:*",
+    "zod": "^3.25.67"
   },
   "devDependencies": {
     "pkgroll": "^2.13.1",

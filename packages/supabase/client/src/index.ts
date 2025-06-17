@@ -1,6 +1,14 @@
 import { createClient } from '@supabase/supabase-js';
+import { z } from 'zod';
 
-const supabaseUrl = process.env.SUPABASE_URL as string;
-const supabaseKey = process.env.SUPABASE_ANON_KEY as string;
+const envSchema = z.object({
+  SUPABASE_URL: z.string().url(),
+  SUPABASE_ANON_KEY: z.string().min(1),
+});
 
-export const supabaseClient = createClient(supabaseUrl, supabaseKey);
+const parsedEnv = envSchema.parse(process.env);
+
+export const supabaseClient = createClient(
+  parsedEnv.SUPABASE_URL,
+  parsedEnv.SUPABASE_ANON_KEY,
+);
