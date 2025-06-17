@@ -1,0 +1,17 @@
+{
+  "name": "@fintrail/pdf-parser",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "build": "pkgroll --src src --dist build"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^5.3.31"
+  },
+  "devDependencies": {
+    "pkgroll": "^2.13.1",
+    "typescript": "^5.8.3"
+  }
+}
