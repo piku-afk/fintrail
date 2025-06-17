@@ -6,7 +6,7 @@
     { "name": "@fintrail/storage", "path": "./packages/storage" },
     {
       "name": "@fintrail/supabase-client",
-      "path": "./packages/supabase/client"
+      "path": "./packages/supabase-client"
     },
     { "name": "@fintrail", "path": "." }
   ],

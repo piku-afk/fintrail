@@ -8,7 +8,4 @@ const envSchema = z.object({
 
 const parsedEnv = envSchema.parse(process.env);
 
-export const supabaseClient = createClient(
-  parsedEnv.SUPABASE_URL,
-  parsedEnv.SUPABASE_ANON_KEY,
-);
+export const supabaseClient = createClient(parsedEnv.SUPABASE_URL, parsedEnv.SUPABASE_ANON_KEY);

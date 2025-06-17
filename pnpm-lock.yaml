@@ -42,7 +42,7 @@ importers:
     dependencies:
       '@fintrail/supabase-client':
         specifier: workspace:*
-        version: link:../supabase/client
+        version: link:../supabase-client
       zod:
         specifier: ^3.25.67
         version: 3.25.67
@@ -57,7 +57,7 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
-  packages/supabase/client:
+  packages/supabase-client:
     dependencies:
       '@supabase/supabase-js':
         specifier: ^2.50.0
