@@ -3,11 +3,11 @@
     { "name": "@fintrail/parser", "path": "./apps/parser" },
     { "name": "@fintrail/web", "path": "./apps/web" },
     { "name": "@fintrail/pdf-parser", "path": "./packages/pdf-parser" },
-    { "name": "@fintrail/storage", "path": "./packages/storage" },
     {
       "name": "@fintrail/supabase-client",
       "path": "./packages/supabase-client"
     },
+    { "name": "@fintrail/supabase-storage", "path": "./packages/supabase-storage" },
     { "name": "@fintrail", "path": "." }
   ],
   "settings": {}
