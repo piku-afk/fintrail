@@ -6,4 +6,5 @@ words: []
 ignoreWords:
   - fintrail
   - supabase
+  - syncpack
 import: []

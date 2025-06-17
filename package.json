@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "format:check": "biome format ./**",
-    "format:write": "biome format --write ./**"
+    "format:write": "biome format --write ./**",
+    "sync:all": "syncpack list",
+    "sync:list": "syncpack list-mismatches",
+    "sync:fix": "syncpack fix-mismatches && pnpm install"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "syncpack": "^13.0.4",
     "turbo": "^2.5.4"
   },
   "engines": {
