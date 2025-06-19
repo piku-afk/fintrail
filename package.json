@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "turbo run build",
-    "dev:storage": "dotenvx run -f .env.dev -- turbo run --filter @fintrail/storage dev",
+    "dev:logger": "dotenvx run -f .env.dev -- turbo run --filter @fintrail/logger dev",
     "format:check": "biome format ./**",
     "format:write": "biome format --write ./**",
     "sync:all": "syncpack list",
