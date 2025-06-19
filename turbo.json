@@ -1,13 +1,16 @@
 {
   "$schema": "https://turborepo.com/schema.json",
-  "globalEnv": ["SUPABASE_URL", "SUPABASE_ANON_KEY", "SUPABASE_BUCKET_NAME"],
+  "globalEnv": [
+    "ENVIRONMENT",
+    "SUPABASE_URL",
+    "SUPABASE_ANON_KEY",
+    "SUPABASE_BUCKET_NAME",
+    "OPENAI_API_KEY",
+    "LOG_LEVEL"
+  ],
   "tasks": {
-    "format:write": {},
-    "format:check": {},
-    "build": {
-      "dependsOn": ["format:check", "^build"],
-      "outputs": ["build/**"]
-    },
-    "dev": { "cache": false, "persistent": true }
+    "build": { "dependsOn": ["^build"], "outputs": ["build/**"] },
+    "dev": { "dependsOn": ["^build"], "persistent": true, "cache": false },
+    "test": { "dependsOn": [] }
   }
 }

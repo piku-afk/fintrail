@@ -3,10 +3,11 @@ import { getDocument, type PDFDocumentProxy } from 'pdfjs-dist/legacy/build/pdf.
 /**
  * Parses a PDF file and returns a PDFDocumentProxy object.
  * @async
- * @param {ArrayBuffer} pdfBuffer - The PDF data to parse.
+ * @param {Buffer} pdfBuffer - The PDF data to parse.
  * @returns {Promise<PDFDocumentProxy>} A promise that resolves to the PDFDocumentProxy.
  * @throws {Error} If the PDF cannot be parsed or is invalid, the promise will be rejected with an error.
  */
-export const parsePdf = async (pdfBuffer: ArrayBuffer): Promise<PDFDocumentProxy> => {
-  return getDocument({ data: pdfBuffer }).promise;
+export const parsePdf = async (pdfBuffer: Buffer): Promise<PDFDocumentProxy> => {
+  // pdfjs-dist expects the PDF data as a Uint8Array, not a Buffer
+  return getDocument({ data: new Uint8Array(pdfBuffer) }).promise;
 };

@@ -8,6 +8,7 @@ ignoreWords:
   - dotenvx
   - biomejs
   - fintrail
+  - pdfs
   - pkgroll
   - supabase
   - syncpack
