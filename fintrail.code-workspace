@@ -1,5 +1,6 @@
 {
   "folders": [
+    { "name": "@fintrail/env-validator", "path": "./packages/env-validator" },
     { "name": "@fintrail/logger", "path": "./packages/logger" },
     { "name": "@fintrail/parser", "path": "./apps/parser" },
     { "name": "@fintrail/web", "path": "./apps/web" },

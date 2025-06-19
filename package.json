@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "turbo run build",
+    "dev:env-validator": "dotenvx run -f .env.dev -- turbo run --filter @fintrail/env-validator dev",
     "dev:logger": "dotenvx run -f .env.dev -- turbo run --filter @fintrail/logger dev",
     "format:check": "biome format ./**",
     "format:write": "biome format --write ./**",

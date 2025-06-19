@@ -1,0 +1,25 @@
+{
+  "name": "@fintrail/env-validator",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./build/index.js"
+    }
+  },
+  "scripts": {
+    "build": "pkgroll --src src --dist build",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "zod": "^3.25.67",
+    "@fintrail/logger": "workspace:*"
+  },
+  "devDependencies": {
+    "pkgroll": "^2.13.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
