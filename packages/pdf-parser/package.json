@@ -1,9 +1,14 @@
 {
   "name": "@fintrail/pdf-parser",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
-  "main": "./build/index.js",
   "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./build/index.js"
+    }
+  },
   "scripts": {
     "build": "pkgroll --src src --dist build"
   },
